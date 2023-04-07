@@ -1,0 +1,384 @@
+{% extends 'website/base.html' %}
+{% load static %}
+
+{% block content %}
+ <!-- Top Bar Start -->
+ <div class="top-bar d-none d-md-block">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="top-bar-left">
+                    <!-- <div class="text">
+                        <i class="fa fa-phone-alt"></i>
+                        <p>+91 88672 68794 / +91 99107 88402</p>
+                    </div> -->
+                    <div class="text">
+                        <!-- <i class="fa fa-envelope"></i> -->
+                        <!-- <p>info@hhrd.org.in</p> -->
+                        <p>Helping Hand for Rejuvinations of Dreams</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="top-bar-right">
+                    <div class="social">
+                        <a target="_blank" href="https://api.whatsapp.com/send?phone=919910788402"><i class="fab fa-whatsapp"></i></a>
+                        <a href=""><i class="fab fa-youtube"></i></a>
+                        <a href=""><i class="fab fa-facebook-f"></i></a>
+                        <a href=""><i class="fab fa-linkedin-in"></i></a>
+                        <a target="_blank" href="https://instagram.com/hhrd_forall?igshid=ZDdkNTZiNTM= "><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Top Bar End -->
+
+<!-- Nav Bar Start -->
+<div class="navbar navbar-expand-lg bg-dark navbar-dark">
+    <div class="container-fluid">
+        <a href="{% url 'index' %}" class="navbar-brand"><img src="{% static 'img/logo1.png' %}" alt="logo"/></a>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+            <div class="navbar-nav ml-auto">
+                <a href="{% url 'index' %}" class="nav-item nav-link active">Home</a>
+                <a href="" class="nav-item nav-link">About Us</a>
+                <a href="" class="nav-item nav-link">Blog</a>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">What We Do?</a>
+                    <div class="dropdown-menu">
+                        <a href="{% url 'education' %}" class="dropdown-item">Education</a>
+                        <a href="{% url 'mental' %}" class="dropdown-item">Mental Health</a>
+                        <a href="{% url 'elderly' %}" class="dropdown-item">Elderly People</a>
+                        <a href="{% url 'safety' %}" class="dropdown-item">Safety & Protection</a>
+                        <a href="{% url 'health' %}" class="dropdown-item">Health & Nutrition</a>
+                    </div>
+                </div>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Media Center</a>
+                    <div class="dropdown-menu">
+                        <a href="" class="dropdown-item">Events</a>
+                        <a href="" class="dropdown-item">Gallery</a>
+                    </div>
+                </div>
+                <a href="" class="nav-item nav-link">Contact Us</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Nav Bar End -->
+
+<!-- Page Header Start -->
+        <div class="page-header3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h2>Elderly People</h2>
+                    </div>
+                    <!-- <div class="col-12">
+                        <a href="">Home</a>
+                        <a href="">Ed</a>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+<!-- Page Header End -->
+        
+<!-- Education Start-->
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 col-md-6 order-2 order-md-1 mt-4 pt-2 mt-sm-0 opt-sm-0">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 col-md-6 col-6">
+                            <div class="row">
+                                <div class="col-lg-12 col-md-12 mt-4 pt-2">
+                                    <div class="card work-desk rounded border-0 overflow-hidden">
+                                        <img src="{% static 'img/education1.png' %}" class="img-fluid" alt="Image" />
+                                        <div class="img-overlay bg-dark"></div>
+                                    </div>
+                                </div>
+                                <!--end col-->
+        
+                                <!-- <div class="col-12">
+                                    <div class="mt-4 pt-2 text-right">
+                                        <a href="javascript:void(0)" class="btn btn-info">Read More <i class="mdi mdi-chevron-right"></i></a>
+                                    </div>
+                                </div> -->
+                            </div>
+                            <!--end row-->
+                        </div>
+                        <!--end col-->
+        
+                        <div class="col-lg-6 col-md-6 col-6">
+                            <div class="row">
+                                <div class="col-lg-12 col-md-12">
+                                    <div class="card work-desk rounded border-0 overflow-hidden">
+                                        <img src="{% static 'img/education3.png'%}" class="img-fluid" alt="Image" />
+                                        <div class="img-overlay bg-dark"></div>
+                                    </div>
+                                </div>
+                                <!--end col-->
+        
+                                <div class="col-lg-12 col-md-12 mt-4 pt-2">
+                                    <div class="card work-desk rounded border-0 overflow-hidden">
+                                        <img src="{% static 'img/education2.png' %}" class="img-fluid" alt="Image" />
+                                        <div class="img-overlay bg-dark"></div>
+                                    </div>
+                                </div>
+                                <!--end col-->
+                            </div>
+                            <!--end row-->
+                        </div>
+                        <!--end col-->
+                    </div>
+                    <!--end row-->
+                </div>
+                <!--end col-->
+        
+                <div class="col-lg-6 col-md-6 col-12 order-1 order-md-2">
+                    <div class="section-title ml-lg-5">
+                        <!-- <h5 class="text-custom font-weight-normal mb-3">About Us</h5> -->
+                        <h2 class="title mb-4">
+                            Old age is the most vulnerable phase of human life cycle. It is at this phase that the elderly requires maximum care and protection
+                        </h2>
+                        <p class="text-muted mb-0">Old age is an unstoppable phase in the natural life cycle which every human being has to pass through. It brings along several challenges and different thinking and living patterns. In our Society Elderly people are not provided by proper food and medication by the members of their own families. And at times they are abandoned and even disowned by their own . This gives rise to physical, verbal, financial and psychological abuse, which leaves them in a very helpless situation.</p>
+                        <p class="text-muted mb-0">
+                            We believe that elderly people are not unwanted being in our society .They require care, safety and protection as these are their rights. 
+                        </p>
+
+        
+                        <!-- <div class="row">
+                            <div class="col-lg-6 mt-4 pt-2">
+                                <div class="media align-items-center rounded shadow p-3">
+                                    <i class="fa fa-play h4 mb-0 text-custom"></i>
+                                    <h6 class="ml-3 mb-0"><a href="javascript:void(0)" class="text-dark">Responsive</a></h6>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 mt-4 pt-2">
+                                <div class="media align-items-center rounded shadow p-3">
+                                    <i class="fa fa-file-download h4 mb-0 text-custom"></i>
+                                    <h6 class="ml-3 mb-0"><a href="javascript:void(0)" class="text-dark">Free Download</a></h6>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 mt-4 pt-2">
+                                <div class="media align-items-center rounded shadow p-3">
+                                    <i class="fa fa-user h4 mb-0 text-custom"></i>
+                                    <h6 class="ml-3 mb-0"><a href="javascript:void(0)" class="text-dark">Support</a></h6>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 mt-4 pt-2">
+                                <div class="media align-items-center rounded shadow p-3">
+                                    <i class="fa fa-image h4 mb-0 text-custom"></i>
+                                    <h6 class="ml-3 mb-0"><a href="javascript:void(0)" class="text-dark">Development</a></h6>
+                                </div>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+                <!--end col-->
+            </div>
+            <!--enr row-->
+        </div>
+<!-- Education End-->
+
+<!-- Blog Start -->
+        <!-- <div class="blog">
+            <div class="container">
+                <div class="section-header text-center">
+                    <h2>Related Blogs</h2>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="blog-item">
+                            <div class="blog-img">
+                                <img src="img/blog-1.jpg" alt="Image">
+                            </div>
+                            <div class="blog-text">
+                                <h3><a href="#">Lorem ipsum dolor sit</a></h3>
+                                <p>
+                                    Lorem ipsum dolor sit amet elit. Neca pretim miura bitur facili ornare velit non vulpte liqum metus tortor
+                                </p>
+                            </div>
+                            <div class="blog-meta">
+                                <p><i class="fa fa-user"></i><a href="">User</a></p>
+                                <p><i class="fa fa-comments"></i><a href="">15 Comments</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="blog-item">
+                            <div class="blog-img">
+                                <img src="img/blog-2.jpg" alt="Image">
+                            </div>
+                            <div class="blog-text">
+                                <h3><a href="#">Lorem ipsum dolor sit</a></h3>
+                                <p>
+                                    Lorem ipsum dolor sit amet elit. Neca pretim miura bitur facili ornare velit non vulpte liqum metus tortor
+                                </p>
+                            </div>
+                            <div class="blog-meta">
+                                <p><i class="fa fa-user"></i><a href="">User</a></p>
+                                <p><i class="fa fa-comments"></i><a href="">15 Comments</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="blog-item">
+                            <div class="blog-img">
+                                <img src="img/blog-3.jpg" alt="Image">
+                            </div>
+                            <div class="blog-text">
+                                <h3><a href="#">Lorem ipsum dolor sit</a></h3>
+                                <p>
+                                    Lorem ipsum dolor sit amet elit. Neca pretim miura bitur facili ornare velit non vulpte liqum metus tortor
+                                </p>
+                            </div>
+                            <div class="blog-meta">
+                                <p><i class="fa fa-user"></i><a href="">User</a></p>
+                                <p><i class="fa fa-comments"></i><a href="">15 Comments</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="blog-item">
+                            <div class="blog-img">
+                                <img src="img/blog-1.jpg" alt="Image">
+                            </div>
+                            <div class="blog-text">
+                                <h3><a href="#">Lorem ipsum dolor sit</a></h3>
+                                <p>
+                                    Lorem ipsum dolor sit amet elit. Neca pretim miura bitur facili ornare velit non vulpte liqum metus tortor
+                                </p>
+                            </div>
+                            <div class="blog-meta">
+                                <p><i class="fa fa-user"></i><a href="">User</a></p>
+                                <p><i class="fa fa-comments"></i><a href="">15 Comments</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="blog-item">
+                            <div class="blog-img">
+                                <img src="img/blog-2.jpg" alt="Image">
+                            </div>
+                            <div class="blog-text">
+                                <h3><a href="#">Lorem ipsum dolor sit</a></h3>
+                                <p>
+                                    Lorem ipsum dolor sit amet elit. Neca pretim miura bitur facili ornare velit non vulpte liqum metus tortor
+                                </p>
+                            </div>
+                            <div class="blog-meta">
+                                <p><i class="fa fa-user"></i><a href="">User</a></p>
+                                <p><i class="fa fa-comments"></i><a href="">15 Comments</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="blog-item">
+                            <div class="blog-img">
+                                <img src="img/blog-3.jpg" alt="Image">
+                            </div>
+                            <div class="blog-text">
+                                <h3><a href="#">Lorem ipsum dolor sit</a></h3>
+                                <p>
+                                    Lorem ipsum dolor sit amet elit. Neca pretim miura bitur facili ornare velit non vulpte liqum metus tortor
+                                </p>
+                            </div>
+                            <div class="blog-meta">
+                                <p><i class="fa fa-user"></i><a href="">User</a></p>
+                                <p><i class="fa fa-comments"></i><a href="">15 Comments</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <ul class="pagination justify-content-center">
+                            <li class="page-item disabled"><a class="page-link" href="#">Previous</a></li>
+                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item active"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                        </ul> 
+                    </div>
+                </div>
+            </div>
+        </div> -->
+<!-- Blog End -->
+
+<!-- Footer Start -->
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-6">
+                <div class="footer-contact">
+                    <h2 class="footer-heading">Helping Hand for Rejuvinations of Dreams</h2>
+                    <img className="footer-image" src="{% static 'img/logo1.png'%}" style="width:60%"/><p></p>
+                    <!-- <p>Love begins by taking care of the closest ones-the ones at home,
+                        when women takes care of their health, they become their best friend.
+                        To care for those who once cared for us is one of the highest Honours</p>
+                    <br/><br/> -->
+                    <!-- <p><a href="#" class="btn btn-quarternary">Donate Now</a></p> -->
+                        </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="footer-link">
+                    <h2>Popular Links</h2>
+                    <a href="">About Us</a>
+                    <a href="">Contact Us</a>
+                    <a href="">Popular Causes</a>
+                    <a href="">Upcoming Events</a>
+                    <a href="">Latest Blog</a>
+                </div>
+            </div>
+            <!-- <div class="col-lg-3 col-md-6">
+                <div class="footer-link">
+                    <h2>Useful Links</h2>
+                    <a href="">Terms of use</a>
+                    <a href="">Privacy policy</a>
+                    <a href="">Cookies</a>
+                    <a href="">Help</a>
+                    <a href="">FQAs</a>
+                </div>
+            </div> -->
+            <div class="col-lg-4 col-md-6">
+                <div class="footer-contact">
+                    <h2>Have a Question?</h2>
+                    <p><span style="float: center;"><i class="fa fa-phone-alt"></i></span>+91 88672 68794<br/>  <span style="margin-left: 7%;">+91 99107 88402</span></p>
+                    <p><i class="fa fa-envelope"></i>info@hhrd.org.in</p>
+                    <div class="footer-social">
+                        <a class="btn btn-custom1" target="_blank" href="https://api.whatsapp.com/send?phone=919910788402"><i class="fab fa-whatsapp"></i></a>
+                        <a class="btn btn-custom1" href=""><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-custom1" href=""><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-custom1" target="_blank" href="https://instagram.com/hhrd_forall?igshid=ZDdkNTZiNTM= "><i class="fab fa-instagram"></i></a>
+                        <a class="btn btn-custom1" href=""><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container copyright">
+        <div class="row">
+            <div class="col-md-6">
+                <p>&copy; <a href="">HHRD</a>, All Right Reserved.</p>
+            </div>
+            <div class="col-md-6">
+                
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Footer End -->
+
+<!-- Back to top button -->
+<a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+<!-- Pre Loader -->
+<div id="loader" class="show">
+    <div class="loader"></div>
+</div>
+{% endblock content %}
